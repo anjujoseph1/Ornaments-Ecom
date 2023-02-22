@@ -10,3 +10,7 @@ class CartItems(models.Model):
     prot=models.ForeignKey(Products,on_delete=models.CASCADE)
     cartli=models.ForeignKey(CartList,on_delete=models.CASCADE)
     quantity=models.IntegerField()
+
+class cartlist(models.Model):
+    prot=models.ForeignKey(Products,on_delete=models.CASCADE)
+    quan=models.Foreignkey(CartItem)
